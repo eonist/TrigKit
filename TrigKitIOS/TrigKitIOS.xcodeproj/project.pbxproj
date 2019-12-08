@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1028924239D234800D381DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1028923239D234800D381DF /* AppDelegate.swift */; };
+		F102892D239D234C00D381DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F102892C239D234C00D381DF /* Assets.xcassets */; };
+		F1028930239D234D00D381DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F102892E239D234D00D381DF /* LaunchScreen.storyboard */; };
+		F102893B239D234D00D381DF /* TrigKitIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F102893A239D234D00D381DF /* TrigKitIOSTests.swift */; };
+		F102895B239D240D00D381DF /* TrigAsserter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F102894B239D240D00D381DF /* TrigAsserter.swift */; };
+		F102895C239D240D00D381DF /* TrigUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F102894C239D240D00D381DF /* TrigUtils.swift */; };
+		F1028966239D240D00D381DF /* TrigParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1028957239D240D00D381DF /* TrigParser.swift */; };
+		F1028967239D240D00D381DF /* TrigConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1028958239D240D00D381DF /* TrigConverter.swift */; };
+		F1028968239D240D00D381DF /* Trig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1028959239D240D00D381DF /* Trig.swift */; };
+		F102896B239D251100D381DF /* Trig+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F102896A239D251100D381DF /* Trig+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1028937239D234D00D381DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1028918239D234800D381DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F102891F239D234800D381DF;
+			remoteInfo = TrigKitIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F1028920239D234800D381DF /* TrigKitIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrigKitIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1028923239D234800D381DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F102892C239D234C00D381DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F102892F239D234D00D381DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1028931239D234D00D381DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1028936239D234D00D381DF /* TrigKitIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrigKitIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F102893A239D234D00D381DF /* TrigKitIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrigKitIOSTests.swift; sourceTree = "<group>"; };
+		F102893C239D234D00D381DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F102894B239D240D00D381DF /* TrigAsserter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrigAsserter.swift; sourceTree = "<group>"; };
+		F102894C239D240D00D381DF /* TrigUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrigUtils.swift; sourceTree = "<group>"; };
+		F1028957239D240D00D381DF /* TrigParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrigParser.swift; sourceTree = "<group>"; };
+		F1028958239D240D00D381DF /* TrigConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrigConverter.swift; sourceTree = "<group>"; };
+		F1028959239D240D00D381DF /* Trig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trig.swift; sourceTree = "<group>"; };
+		F102896A239D251100D381DF /* Trig+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trig+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F102891D239D234800D381DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1028933239D234D00D381DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1028917239D234800D381DF = {
+			isa = PBXGroup;
+			children = (
+				F1028945239D23EF00D381DF /* Sources */,
+				F1028922239D234800D381DF /* TrigKitIOS */,
+				F1028939239D234D00D381DF /* TrigKitIOSTests */,
+				F1028921239D234800D381DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1028921239D234800D381DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1028920239D234800D381DF /* TrigKitIOS.app */,
+				F1028936239D234D00D381DF /* TrigKitIOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1028922239D234800D381DF /* TrigKitIOS */ = {
+			isa = PBXGroup;
+			children = (
+				F1028923239D234800D381DF /* AppDelegate.swift */,
+				F102892C239D234C00D381DF /* Assets.xcassets */,
+				F102892E239D234D00D381DF /* LaunchScreen.storyboard */,
+				F1028931239D234D00D381DF /* Info.plist */,
+			);
+			path = TrigKitIOS;
+			sourceTree = "<group>";
+		};
+		F1028939239D234D00D381DF /* TrigKitIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				F102893A239D234D00D381DF /* TrigKitIOSTests.swift */,
+				F102893C239D234D00D381DF /* Info.plist */,
+			);
+			path = TrigKitIOSTests;
+			sourceTree = "<group>";
+		};
+		F1028945239D23EF00D381DF /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F1028946239D23EF00D381DF /* TrigKit */,
+			);
+			name = Sources;
+			path = ../Sources;
+			sourceTree = "<group>";
+		};
+		F1028946239D23EF00D381DF /* TrigKit */ = {
+			isa = PBXGroup;
+			children = (
+				F102894B239D240D00D381DF /* TrigAsserter.swift */,
+				F102894C239D240D00D381DF /* TrigUtils.swift */,
+				F1028957239D240D00D381DF /* TrigParser.swift */,
+				F1028958239D240D00D381DF /* TrigConverter.swift */,
+				F1028959239D240D00D381DF /* Trig.swift */,
+				F102896A239D251100D381DF /* Trig+Extension.swift */,
+			);
+			path = TrigKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F102891F239D234800D381DF /* TrigKitIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F102893F239D234D00D381DF /* Build configuration list for PBXNativeTarget "TrigKitIOS" */;
+			buildPhases = (
+				F102891C239D234800D381DF /* Sources */,
+				F102891D239D234800D381DF /* Frameworks */,
+				F102891E239D234800D381DF /* Resources */,
+				F102896C239D29B500D381DF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrigKitIOS;
+			productName = TrigKitIOS;
+			productReference = F1028920239D234800D381DF /* TrigKitIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1028935239D234D00D381DF /* TrigKitIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1028942239D234D00D381DF /* Build configuration list for PBXNativeTarget "TrigKitIOSTests" */;
+			buildPhases = (
+				F1028932239D234D00D381DF /* Sources */,
+				F1028933239D234D00D381DF /* Frameworks */,
+				F1028934239D234D00D381DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1028938239D234D00D381DF /* PBXTargetDependency */,
+			);
+			name = TrigKitIOSTests;
+			productName = TrigKitIOSTests;
+			productReference = F1028936239D234D00D381DF /* TrigKitIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1028918239D234800D381DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = FutureLab;
+				TargetAttributes = {
+					F102891F239D234800D381DF = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					F1028935239D234D00D381DF = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = F102891F239D234800D381DF;
+					};
+				};
+			};
+			buildConfigurationList = F102891B239D234800D381DF /* Build configuration list for PBXProject "TrigKitIOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1028917239D234800D381DF;
+			productRefGroup = F1028921239D234800D381DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F102891F239D234800D381DF /* TrigKitIOS */,
+				F1028935239D234D00D381DF /* TrigKitIOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F102891E239D234800D381DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1028930239D234D00D381DF /* LaunchScreen.storyboard in Resources */,
+				F102892D239D234C00D381DF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1028934239D234D00D381DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F102896C239D29B500D381DF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F102891C239D234800D381DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F102896B239D251100D381DF /* Trig+Extension.swift in Sources */,
+				F1028924239D234800D381DF /* AppDelegate.swift in Sources */,
+				F102895C239D240D00D381DF /* TrigUtils.swift in Sources */,
+				F102895B239D240D00D381DF /* TrigAsserter.swift in Sources */,
+				F1028967239D240D00D381DF /* TrigConverter.swift in Sources */,
+				F1028968239D240D00D381DF /* Trig.swift in Sources */,
+				F1028966239D240D00D381DF /* TrigParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1028932239D234D00D381DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F102893B239D234D00D381DF /* TrigKitIOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1028938239D234D00D381DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F102891F239D234800D381DF /* TrigKitIOS */;
+			targetProxy = F1028937239D234D00D381DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F102892E239D234D00D381DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F102892F239D234D00D381DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F102893D239D234D00D381DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F102893E239D234D00D381DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1028940239D234D00D381DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TrigKitIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.futurelab.TrigKitIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F1028941239D234D00D381DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TrigKitIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.futurelab.TrigKitIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F1028943239D234D00D381DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TrigKitIOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.futurelab.TrigKitIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrigKitIOS.app/TrigKitIOS";
+			};
+			name = Debug;
+		};
+		F1028944239D234D00D381DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TrigKitIOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.futurelab.TrigKitIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrigKitIOS.app/TrigKitIOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F102891B239D234800D381DF /* Build configuration list for PBXProject "TrigKitIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F102893D239D234D00D381DF /* Debug */,
+				F102893E239D234D00D381DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F102893F239D234D00D381DF /* Build configuration list for PBXNativeTarget "TrigKitIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1028940239D234D00D381DF /* Debug */,
+				F1028941239D234D00D381DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1028942239D234D00D381DF /* Build configuration list for PBXNativeTarget "TrigKitIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1028943239D234D00D381DF /* Debug */,
+				F1028944239D234D00D381DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1028918239D234800D381DF /* Project object */;
+}
