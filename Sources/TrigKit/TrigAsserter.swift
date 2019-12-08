@@ -14,7 +14,7 @@ public class TrigAsserter {
      * - Note: if the difference is 0 then it can be arguably be clockwise and anti-clockwise at the same time, consider this in the calling method
      * - Note: if the diff is 0 then its currently considered not clockwise, or anti-clockwise
      */
-    public static func isClockWiseByAngle(_ a: CGFloat,_ b: CGFloat) -> Bool {
+    public static func isClockWiseByAngle(_ a: CGFloat, _ b: CGFloat) -> Bool {
         let difference: CGFloat = TrigParser.difference(a, b)
         if difference == Trig.pi || difference == -Trig.pi {
             return true
@@ -83,8 +83,8 @@ public class TrigAsserter {
      * - Note: just an alternative to isOppositeDirectional (isOppositeDirectional should be faster than this one)
      * - Parameter: bisectorAngle can be thought of as the level angle. Usually 0, but can be other things (think 3 conected lines where the bisectorAngle represents the angle of the line in the middle)
      */
-    public static func isOppositeDirectional2(_ bisectorAngle: CGFloat, _ angleA: CGFloat, _ angleB: CGFloat)  -> Bool {
-       return (Trig.angleSpan2(angleA, bisectorAngle) < π && Trig.angleSpan2(angleB,bisectorAngle) > π) || (Trig.angleSpan2(angleA, bisectorAngle) > π && Trig.angleSpan2(angleB, bisectorAngle) < π)
+    public static func isOppositeDirectional2(_ bisectorAngle: CGFloat, _ angleA: CGFloat, _ angleB: CGFloat) -> Bool {
+       return (Trig.angleSpan2(angleA, bisectorAngle) < π && Trig.angleSpan2(angleB, bisectorAngle) > π) || (Trig.angleSpan2(angleA, bisectorAngle) > π && Trig.angleSpan2(angleB, bisectorAngle) < π)
     }
     /**
      * new

@@ -9,7 +9,7 @@ public class TrigConverter {
         // Fixme: ⚠️️ do some math here to get radius and angle
         let radius = CGFloat(0.0)
         let angle = CGFloat(0.0)
-        return (radius,angle)
+        return (radius, angle)
     }
     /**
      * Converts an angle in degrees to radians.

@@ -21,8 +21,8 @@ public class TrigParser {
     */
    public static func normalize(_ angle: CGFloat) -> CGFloat {
       var angle = angle
-      while angle < 0 {angle += π * 2}
-      while angle >= π * 2 {angle -= π * 2}
+      while angle < 0 { angle += π * 2 }
+      while angle >= π * 2 { angle -= π * 2 }
       return angle
    }
    /**
@@ -52,8 +52,8 @@ public class TrigParser {
     * - Parameter: theta: An radian in degrees typically 0 - Math.PI*2
     */
    public static func normalize2(_ angle: CGFloat) -> CGFloat {
-      if angle < -π { return π + (angle.truncatingRemainder(dividingBy: π))}
-      if angle > π { return -π + (angle.truncatingRemainder(dividingBy: π))}
+      if angle < -π { return π + (angle.truncatingRemainder(dividingBy: π)) }
+      if angle > π { return -π + (angle.truncatingRemainder(dividingBy: π)) }
       return angle
    }
    /**
@@ -67,9 +67,9 @@ public class TrigParser {
    /**
     * - Note: you need to abs() the result if you want only posetive angleSpan
     */
-   public static func difference(_ pivot: CGPoint, _ p1: CGPoint, _ p2: CGPoint) -> CGFloat{
-      let a:CGFloat = Trig.angle(pivot, p1)
-      let b:CGFloat = Trig.angle(pivot, p2)
+   public static func difference(_ pivot: CGPoint, _ p1: CGPoint, _ p2: CGPoint) -> CGFloat {
+      let a: CGFloat = Trig.angle(pivot, p1)
+      let b: CGFloat = Trig.angle(pivot, p2)
       return difference(a, b)
    }
    /**
@@ -91,9 +91,9 @@ public class TrigParser {
     * EXAMPLE:
     * angleSpan(Math.PI*-0.5, Math.PI,Direction.COUNTER_CLOCK_WISE);//Math.PI*-0.5 to Math.PI = 4.71
     * angleSpan(Math.PI, Math.PI*0.5,Direction.COUNTER_CLOCK_WISE);//Math.PI to Math.PI*0.5 = 4.71
-    * - TODO: ⚠️️ replace direction with boolean: isClockWise
+    * - Fixme: ⚠️️ replace direction with boolean: isClockWise
     */
-   public static func angleSpan(_ a: CGFloat, _ b: CGFloat, _ direction: String = Trig.clockWise) -> CGFloat{
+   public static func angleSpan(_ a: CGFloat, _ b: CGFloat, _ direction: String = Trig.clockWise) -> CGFloat {
       if direction == Trig.clockWise { return Trig.normalize(b + (Trig.pi * 2 - a)) }
       return Trig.normalize(a + (Trig.pi * 2 - b))/*Direction.COUNTER_CLOCK_WISE*/
    }
@@ -120,7 +120,8 @@ public class TrigParser {
     *   - verticalAxis: vertical axis multiplier
     * - Note: if you want to flip an angle vertically you can also do this: angle *= -1;
     * - Note: if you want to flip an angle horizontally you can also do this: angle = (angle + Math.PI/2 * -1)-Math.PI/2;
-    * - Note: if you want to flip an angle that is rotated, just rotate it back to 0 rotation and then flip the angle and then rotated it back to original rotation // TODO: maybe make a funciton that does this?
+    * - Note: if you want to flip an angle that is rotated, just rotate it back to 0 rotation and then flip the angle and then rotated it back to original rotation
+    * - Fixme: ⚠️️ maybe make a funciton that does this?
     * - Note: To find xAxisMultiplier its smart to use if shorthand like so: (_arcMinor > 0)? 1 : -1
     * - Note: This function used to be named Angle.inverse but because of ambiguity it was renmaed to Angle.flip
     * ## Examples: Angle.flip(Angle.polarAngle(20, 20), 1, 1);//Output: 0.7853981633974483
@@ -133,7 +134,7 @@ public class TrigParser {
     * - Note: ⚠️️ should use yMultiplier:int xMultiplier:int
     * - Note: ⚠️️ if you flip with -1,-1 you could also just do normalize2(angle - PI), this could be an optimization
     */
-   public static func flip(_ angle: CGFloat, _ axisMultiplier:CGPoint) -> CGFloat {
+   public static func flip(_ angle: CGFloat, _ axisMultiplier: CGPoint) -> CGFloat {
       let verticalAngle: CGFloat = angle * axisMultiplier.y
       var horisontalAngle: CGFloat = Trig.normalize2(verticalAngle - Trig.hpi) * axisMultiplier.x // Rotate to vertical alignment
       horisontalAngle = Trig.normalize2(horisontalAngle + Trig.hpi)/*rotate back to original alignment*/
@@ -154,8 +155,7 @@ public class TrigParser {
     * ## EXAMPLES:
     * Trig.angleBisector(Trig.QPI,  Trig.HPI+Trig.HPI));//1.9634954084936207
     */
-   public static func angleBisector(_ a: CGFloat, _ b: CGFloat) -> CGFloat { // TODO: rename to just bisector, bisectorAngle
+   public static func angleBisector(_ a: CGFloat, _ b: CGFloat) -> CGFloat { // - Fixme: ⚠️️ rename to just bisector, bisectorAngle
       return a + ((b - a) / 2)
    }
 }
-

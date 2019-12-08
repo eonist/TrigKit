@@ -29,7 +29,7 @@ public class Trig {
     public static let pi: CGFloat = π // pi (3.14)
     public static let tpi: CGFloat = π / 6 // 30 deg in radians, twelft
     public static let dtpi: CGFloat = π / 3 // 60 deg in radians, dubble twelft
-    public static let t: (CGFloat, CGFloat) = (-π / 4,-π * 0.75)
+    public static let t: (CGFloat, CGFloat) = (-π / 4, -π * 0.75)
     public static let b: (CGFloat, CGFloat) = (π / 4, π * 0.75)
     public static let l: (CGFloat, CGFloat) = (Trig.normalize(π * 0.75), Trig.normalize(-π * 0.75))/*remember to normalize the angle to test against this value to be between 0 - PI*2*/
     public static let r: (CGFloat, CGFloat) = (-π / 4, π / 4)
