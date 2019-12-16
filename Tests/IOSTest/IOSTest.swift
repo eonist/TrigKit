@@ -1,7 +1,7 @@
 import XCTest
-@testable import TrigKitIOS
+@testable import TrigKit
 
-class TrigKitIOSTests: XCTestCase {
+class IOSTest: XCTestCase {
    override func setUp() {
       super.setUp()
    }
@@ -9,9 +9,9 @@ class TrigKitIOSTests: XCTestCase {
       super.tearDown()
    }
    func testExample() {
-      TrigKitIOSTests.assertTests()
-      TrigKitIOSTests.parserTests()
-      TrigKitIOSTests.trigTests()
+      IOSTest.assertTests()
+      IOSTest.parserTests()
+      IOSTest.trigTests()
    }
    func testPerformanceExample() {
       self.measure { }
@@ -20,7 +20,7 @@ class TrigKitIOSTests: XCTestCase {
 /**
  * Tests
  */
-extension TrigKitIOSTests {
+extension IOSTest {
    /**
     * assert tests
     */
@@ -35,13 +35,13 @@ extension TrigKitIOSTests {
     * Parser tests
     */
    private static func parserTests() {
-      XCTAssertEqual(TrigParser.angleBisector(Trig.qpi,  Trig.hpi + Trig.hpi), 1.9634954084936207)
+      XCTAssertEqual(TrigParser.angleBisector(Trig.qpi, Trig.hpi + Trig.hpi), 1.963_495_408_493_620_7)
    }
    /**
     * Trig tests
     */
    private static func trigTests() {
-      XCTAssertEqual(90 * Trig.rad, π/4)
-      XCTAssertEqual(Trig.pi / 4 * Trig.deg, 90)
+      XCTAssertEqual(90 * Trig.rad, π / 2)
+      XCTAssertEqual(Trig.pi / 4 * Trig.deg, 45)
    }
 }
