@@ -19,7 +19,7 @@ public class Trig {
     public static let right: CGFloat = 0
     public static let bottom: CGFloat = 90
     public static let top: CGFloat = 270 //-90
-    public static let rad: CGFloat = π / 180 //㎭, EXAMPLE: 90*Trig.rad//Output:π/4
+    public static let rad: CGFloat = π / 180 //㎭, EXAMPLE: 90*Trig.rad// Output: π/4
     public static let deg: CGFloat = 180 / π //°, EXAMPLE: Trig.pi/4*Trig.deg//Output: 90
     public static let qpi: CGFloat = π / 4 //quarter pi (0.785)
     public static let epi: CGFloat = π / 8 //eighth pi (0.785/2)

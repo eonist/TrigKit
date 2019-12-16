@@ -30,11 +30,11 @@ public class TrigAsserter {
      * - Note: make sure you have normalized both angles between -PI and +PI
      * - Note: contra directinal can also be called inverse direction
      * ## Examples:
-     * print(Trig.isContraDirectional(Trig.PI, 0));//true, contra-dir
-     * print(Trig.isContraDirectional(0, Trig.PI));//true, contra-dir
-     * print(Trig.isContraDirectional(Trig.HPI, -Trig.HPI));//true, contra-dir
-     * print(Trig.isContraDirectional(Trig.PI, -Trig.PI));//false, its co-dir
-     * print(Trig.isContraDirectional(-Trig.PI, Trig.PI));//false, its co-dir
+     * print(TrigAsserter.isContraDirectional(Trig.PI, 0));//true, contra-dir
+     * print(TrigAsserter.isContraDirectional(0, Trig.PI));//true, contra-dir
+     * print(TrigAsserter.isContraDirectional(Trig.HPI, -Trig.HPI));//true, contra-dir
+     * print(TrigAsserter.isContraDirectional(Trig.PI, -Trig.PI));//false, its co-dir
+     * print(TrigAsserter.isContraDirectional(-Trig.PI, Trig.PI));//false, its co-dir
      */
     public static func isContraDirectional(_ a: CGFloat, _ b: CGFloat) -> Bool {
         let normalizedA: CGFloat = Trig.normalize(a)
@@ -64,7 +64,7 @@ public class TrigAsserter {
     /**
      * Vectors lay on the on a line that is normal to the paralell or anti-parallel angles of both vectors
      * - Note: think the shape of the character "H" the two points connecting the bridge between the vertical lines are colliniear and normal
-     * - Todo: ⚠️️ colliniarNormal is probably not the correct term for this construction, try to find the correct name and construction later
+     * - Fixme: ⚠️️ colliniarNormal is probably not the correct term for this construction, try to find the correct name and construction later
      */
     public static func isCollinearNormal(_ p1: CGPoint, _ p2: CGPoint, _ angle1: CGFloat, _ angle2: CGFloat) -> Bool {
         return isParallel(angle1, angle2) && isNormal(angle1, Trig.angle(p1, p2))
@@ -87,7 +87,7 @@ public class TrigAsserter {
        return (Trig.angleSpan2(angleA, bisectorAngle) < π && Trig.angleSpan2(angleB, bisectorAngle) > π) || (Trig.angleSpan2(angleA, bisectorAngle) > π && Trig.angleSpan2(angleB, bisectorAngle) < π)
     }
     /**
-     * new
+     * Asserts co-directionality
      */
     public static func isCoDir(_ a: CGFloat, _ b: CGFloat) -> Bool {
         let normalizedA: CGFloat = Trig.normalize(a)

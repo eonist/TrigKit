@@ -1,7 +1,9 @@
 import Foundation
 import QuartzCore
-
-extension Trig { // Legacy-support/convenience
+/**
+ * Legacy-support / convenience
+ */
+extension Trig {
    /**
     * Parsers
     */
