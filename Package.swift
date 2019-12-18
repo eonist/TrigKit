@@ -22,7 +22,7 @@ let package = Package(
             name: "TrigKit",
             dependencies: []),
         .testTarget(
-            name: "IOSTest",
+            name: "TrigKitIOSTest",
             dependencies: ["TrigKit"])
     ]
 )

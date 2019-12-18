@@ -1,7 +1,7 @@
 import XCTest
 @testable import TrigKit
 
-class IOSTest: XCTestCase {
+class TrigKitIOSTest: XCTestCase {
    override func setUp() {
       super.setUp()
    }
@@ -9,9 +9,9 @@ class IOSTest: XCTestCase {
       super.tearDown()
    }
    func testExample() {
-      IOSTest.assertTests()
-      IOSTest.parserTests()
-      IOSTest.trigTests()
+      TrigKitIOSTest.assertTests()
+      TrigKitIOSTest.parserTests()
+      TrigKitIOSTest.trigTests()
    }
    func testPerformanceExample() {
       self.measure { }
@@ -20,7 +20,7 @@ class IOSTest: XCTestCase {
 /**
  * Tests
  */
-extension IOSTest {
+extension TrigKitIOSTest {
    /**
     * assert tests
     */
