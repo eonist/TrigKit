@@ -6,8 +6,6 @@
 
 ### Features:
 - Common trigonometry methods
-- Has unit-tests, A-grade at CodeBeat and extensive comments
-- Supports Swift package manager
 
 ### Installation:
 - SPM `"eonist/TrigKit"` branch: `"master"`
