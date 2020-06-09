@@ -17,13 +17,13 @@ public class TrigConverter {
      * - Note: can also be defined: rad * (180 / π)
      */
     public static func degrees(_ radians: CGFloat) -> CGFloat {
-        return π * radians / 180.0
+      π * radians / 180.0
     }
     /**
      * Converts an angle in radians to degrees.
      * - Note: can also be defined degrees * (π / 180)
      */
     public static func radians(_ degrees: CGFloat) -> CGFloat {
-        return degrees / 180.0 * π
+      degrees / 180.0 * π
     }
 }

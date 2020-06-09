@@ -7,15 +7,15 @@ public class TrigParser {
     * - Parameters:
     *   - a: is the pivot point
     *   - b: is the polar point
-    * - Note: use this formula to find the angle in a (0,0) point-space Math.atan2(pointB.y, pointB.x)
+    * - Note: use this formula to find the angle in a (0, 0) point-space Math.atan2(pointB.y, pointB.x)
     * - Note: formula in standard form: Tan Ɵ = y/x (then use inverse tan to find the angle)
     */
    public static func angle(_ a: CGPoint, _ b: CGPoint) -> CGFloat {
-      return atan2(b.y - a.y, b.x - a.x)
+      atan2(b.y - a.y, b.x - a.x)
    }
    /**
     * Returns a radian to be between 0 and Math.PI*2 Radian (0 - 6.28)
-    * - Parameter: theta: An radian in degrees typically 0 - Math.PI*2
+    * - Parameter: theta: An radian in degrees typically 0 - Math.PI * 2
     * - Note: we use "while" function type here because angle could be very low at which point Math.PI*2 needs to be contrinuasly added until its above 0 )
     * - Fixme: ⚠️️ Use modulo like normalize2 does, is that faster ? do an optimization test.
     */
@@ -34,7 +34,7 @@ public class TrigParser {
     *   - p: the position of the sphere
     */
    public static func x(_ y: CGFloat, _ r: CGFloat, _ p: CGPoint) -> CGFloat {
-      return sqrt(pow(r, 2) - pow(y - p.y, 2)) + p.x
+      sqrt(pow(r, 2) - pow(y - p.y, 2)) + p.x
    }
    /**
     * Returns a y value on the circle circumference correlating to the intersecting x axis derrived from the PARAM: x value
@@ -45,7 +45,7 @@ public class TrigParser {
     * - Parameter: p the position of the sphere
     */
    public static func y(_ x: CGFloat, _ r: CGFloat, _ p: CGPoint) -> CGFloat {
-      return sqrt(pow(r, 2) - pow(x - p.x, 2)) + p.y
+      sqrt(pow(r, 2) - pow(x - p.x, 2)) + p.y
    }
    /**
     * Returns an radian to be between -Math.PI(-3.14) and Math.PI(3.14)
@@ -62,7 +62,7 @@ public class TrigParser {
     * - Parameter: endAngle (in radian)
     */
    public static func difference(_ startAngle: CGFloat, _ endAngle: CGFloat) -> CGFloat {
-      return atan2(sin(endAngle - startAngle), cos(endAngle - startAngle))
+      atan2(sin(endAngle - startAngle), cos(endAngle - startAngle))
    }
    /**
     * - Note: you need to abs() the result if you want only posetive angleSpan
@@ -101,7 +101,7 @@ public class TrigParser {
     * NOTE: this is the same as the above but works with a boolean which makes more sence, deprecate angleSpan1
     */
    public static func angleSpan2(_ a: CGFloat, _ b: CGFloat, _ isClockWise: Bool = true) -> CGFloat {
-      return angleSpan(a, b, isClockWise ? Trig.clockWise : Trig.counterClockWise)
+      angleSpan(a, b, isClockWise ? Trig.clockWise : Trig.counterClockWise)
    }
    /**
     * Angle span
@@ -156,6 +156,6 @@ public class TrigParser {
     * Trig.angleBisector(Trig.QPI,  Trig.HPI+Trig.HPI));//1.9634954084936207
     */
    public static func angleBisector(_ a: CGFloat, _ b: CGFloat) -> CGFloat { // - Fixme: ⚠️️ rename to just bisector, bisectorAngle
-      return a + ((b - a) / 2)
+      a + ((b - a) / 2)
    }
 }

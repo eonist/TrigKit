@@ -48,7 +48,7 @@ public class TrigAsserter {
      * - Note: two nonzero vectors are called anti-parallel if they are parallel but have opposite directions
      */
     public static func isParallel(_ a: CGFloat, _ b: CGFloat) -> Bool {
-        return isCodirectional(a, b) || isContraDirectional(a, b)
+      isCodirectional(a, b) || isContraDirectional(a, b)
     }
     /**
      * - Note: make sure both angles have the same normilization applied
@@ -59,7 +59,7 @@ public class TrigAsserter {
         else { return a == b }
     }
     public static func isNormal(_ angle1: CGFloat, _ angle2: CGFloat) -> Bool {
-        return isParallel(angle1, angle2 + (π / 2))
+      isParallel(angle1, angle2 + (π / 2))
     }
     /**
      * Vectors lay on the on a line that is normal to the paralell or anti-parallel angles of both vectors
@@ -67,7 +67,7 @@ public class TrigAsserter {
      * - Fixme: ⚠️️ colliniarNormal is probably not the correct term for this construction, try to find the correct name and construction later
      */
     public static func isCollinearNormal(_ p1: CGPoint, _ p2: CGPoint, _ angle1: CGFloat, _ angle2: CGFloat) -> Bool {
-        return isParallel(angle1, angle2) && isNormal(angle1, Trig.angle(p1, p2))
+      isParallel(angle1, angle2) && isNormal(angle1, Trig.angle(p1, p2))
     }
     /**
      * - Note: can also be defined as: "is when a trajectory hits the infinite tail of the other line"
@@ -84,7 +84,7 @@ public class TrigAsserter {
      * - Parameter: bisectorAngle can be thought of as the level angle. Usually 0, but can be other things (think 3 conected lines where the bisectorAngle represents the angle of the line in the middle)
      */
     public static func isOppositeDirectional2(_ bisectorAngle: CGFloat, _ angleA: CGFloat, _ angleB: CGFloat) -> Bool {
-       return (Trig.angleSpan2(angleA, bisectorAngle) < π && Trig.angleSpan2(angleB, bisectorAngle) > π) || (Trig.angleSpan2(angleA, bisectorAngle) > π && Trig.angleSpan2(angleB, bisectorAngle) < π)
+      (Trig.angleSpan2(angleA, bisectorAngle) < π && Trig.angleSpan2(angleB, bisectorAngle) > π) || (Trig.angleSpan2(angleA, bisectorAngle) > π && Trig.angleSpan2(angleB, bisectorAngle) < π)
     }
     /**
      * Asserts co-directionality
